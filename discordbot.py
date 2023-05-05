@@ -1,18 +1,15 @@
 import uuid
-from cmath import log
 from itertools import chain
-from distutils.sysconfig import PREFIX
 import discord
 from discord.ext import commands
 from discord.http import Route
 from tortoise import Tortoise
-from discord import Message, User, PartialEmoji 
-from dotenv import load_dotenv
-import os
-load_dotenv()
+from discord import Message, User, PartialEmoji
 
-prefix = os.environ['PREFIX']
-TOKEN = os.environ['TOKEN']
+#################################################################
+prefix = "!"
+#################################################################
+
 
 from utils import (
     dump_data,
@@ -398,4 +395,4 @@ bot.load_extension("poll")
 
 
 
-bot.run(TOKEN)
+bot.run("MTEwMzY1NDgzMjYyMDk2MTc5Mg.GxgYJQ.osE7gEow13qnEuZW-OOkOeDFDeRiNSx_TFzYh4")
